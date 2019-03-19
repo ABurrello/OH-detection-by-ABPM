@@ -12,15 +12,15 @@ Steroids= ['Daytime SBP [mmHg]',
         'Nighttime SBP [mmHg]',
         'Nighttime DBP [mmHg]',
         'Nighttime MBP [mmHg]',
-        'Weighted BPV [%]',
+        'Weighted BPV [mmHg]',
         'Daytime SBP Load [%]',
         'Daytime DBP Load [%]',
         'Nighttime SBP Load [%]',
         'Nighttime DBP Load [%]',
-        'RD [0=No, 1=Yes]',
-        'PPH [0=No, 1=Yes]',
+        'Reverse Dipping pattern [0=No, 1=Yes]',
+        'Post-Prandial Hypotension [0=No, 1=Yes]',
         'Hypo-ep (Delta 15 / 24h) [number of episodes]',
-        'Hypo-aw (Delta 15 / 24h) []']
+        'Hypo-aw (Delta 15 / 24h) [0=No, 1=Yes]']
 Query = np.zeros((1,15))
 Prediction_type = ['OH (-)',
 'OH (+)']
