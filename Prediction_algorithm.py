@@ -6,7 +6,7 @@ filename = 'Forest_model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 print 'Welcome to the prediction tool: pls use the point as separator for decimal number: (3.7 and not 3,7)'
 print'-------------------------\n'
-Steroids= ['Daytime SBP [mmHg]',
+ABPM_parameters = ['Daytime SBP [mmHg]',
         'Daytime DBP [mmHg]',
         'Daytime MBP [mmHg]',
         'Nighttime SBP [mmHg]',
@@ -24,8 +24,8 @@ Steroids= ['Daytime SBP [mmHg]',
 Query = np.zeros((1,15))
 Prediction_type = ['OH (-)',
 'OH (+)']
-for i in range(len(Steroids)):
-    String_to_print = 'Insert value of ' +Steroids[i]+' and press enter:\n'
+for i in range(len(ABPM_parameters)):
+    String_to_print = 'Insert value of ' +ABPM_parameters[i]+' and press enter:\n'
     Query[0,i] = input(String_to_print)
 Prediction = loaded_model.predict(Query)
 print '------------'
